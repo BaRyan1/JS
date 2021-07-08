@@ -17,6 +17,7 @@ function createTodo() {
         li.classList.toggle('done');
     }
 
+    
     let deleteButton = document.createElement('button');
     deleteButton.appendChild(document.createTextNode('X'));
     li.appendChild(deleteButton);
@@ -25,18 +26,26 @@ function createTodo() {
     function deleteTodoItem() {
         li.classList.add('delete');
     }
+    
+    
 }
 
 function changeListAfterKeypress(event) {
     if (inputLength() && event.which === 13) {
         createTodo();
     }
+    
+    
 }
 
+
 userInput.addEventListener('keypress', changeListAfterKeypress);
+
 
 buttonEnter.onclick = function() { 
     if (inputLength()) {
         createTodo();
     }
+    
 };
+
