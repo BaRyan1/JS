@@ -1,5 +1,5 @@
-let userInput = document.getElementById('userInput');
 let buttonEnter = document.getElementById('enter');
+let userInput = document.getElementById('userInput');
 let ul = document.querySelector('ul');
 
 function inputIsNotEmpty() {
